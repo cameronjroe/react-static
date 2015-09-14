@@ -5,7 +5,7 @@ import './CNAME';
 
 export default function (path, props, callback) {
   Router.run(routes, path, (Root) => {
-    const html = React.renderToString(<Root />);
+    const html = React.renderToString(<Root {...props} />);
     callback('<!DOCTYPE html>' + html);
   })
 }

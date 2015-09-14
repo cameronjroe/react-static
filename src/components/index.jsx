@@ -5,6 +5,7 @@ import {
   Row,
   Col
 } from 'react-bootstrap';
+import Item from './item';
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -16,9 +17,12 @@ export default class Index extends React.Component {
           <Grid>
             <Row>
               <Col xs={12} md={8}>
-                <h1>Static React Boilerplate</h1>
+                <h1>{this.props.title}</h1>
                 <Link to='/about'>About</Link>
               </Col>
+            </Row>
+            <Row>
+              <Item />
             </Row>
           </Grid>
         </main>

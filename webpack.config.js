@@ -3,15 +3,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 var srcPath = path.join(__dirname, 'src');
 var webpack = require('webpack');
-
-var routes = [
-  '/',
-  '/about',
-  {
-    path: '/not-found',
-    output: '404.html'
-  }
-];
+var config = require('./config');
 
 module.exports = {
   
@@ -39,7 +31,7 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('style.css'),
-    new StaticSiteGeneratorPlugin('bundle.js', routes)
+    new StaticSiteGeneratorPlugin('bundle.js', config.routes, config)
   ],
 
   devServer: {
