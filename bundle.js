@@ -74,6 +74,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _routes2 = _interopRequireDefault(_routes);
 
+	__webpack_require__(433);
+
 	exports['default'] = function (path, props, callback) {
 	  _reactRouter2['default'].run(_routes2['default'], path, function (Root) {
 	    var html = _react2['default'].renderToString(_react2['default'].createElement(Root, null));
@@ -39624,6 +39626,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports['default'] = Index;
 	module.exports = exports['default'];
+
+/***/ },
+/* 433 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "CNAME"
 
 /***/ }
 /******/ ])
