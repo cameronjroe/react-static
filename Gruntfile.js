@@ -10,9 +10,7 @@ module.exports = function (grunt) {
         base: 'dist'
       },
       src: '**/*'
-    },
-
-
+    }
 
   });
 
