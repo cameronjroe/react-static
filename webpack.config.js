@@ -32,7 +32,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.scss$/, loader: ExtractTextPlugin.extract('css?sourceMap!sass?sourceMap') },
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel?stage=0' }
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel?stage=0' },
+      { test: /CNAME/, loader: 'file?name=CNAME' }
     ]
   },
 

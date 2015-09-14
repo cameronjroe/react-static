@@ -1,6 +1,7 @@
 import React from 'react';
 import Router from 'react-router';
 import routes from './routes';
+import './CNAME';
 
 export default function (path, props, callback) {
   Router.run(routes, path, (Root) => {
